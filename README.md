@@ -1,36 +1,43 @@
-<h1>VPN Configuration on Windows Server</h1>
+# Azure Virtual Machine VPN Setup
 
-<h2>Overview</h2>
-<p>Installed and configured VPN services in Windows Server to enable secure remote access to Azure-hosted networks.</p>
+## Overview
+In this lab, a Windows 10 Virtual Machine was deployed in a geographically distant Azure region to simulate a remote environment for VPN testing and global connectivity verification.
 
-<h2>Environments and Technologies Used</h2>
-<ul>
-  <li>Microsoft Azure (Virtual Network / Gateway)</li>
-  <li>Windows Server (Remote Access Role)</li>
-  <li>PowerShell, RDP</li>
-</ul>
+## Environments and Technologies Used
+- Microsoft Azure (Virtual Machines, Resource Groups)
+- Remote Desktop (RDP)
+- WhatIsMyIPAddress.com
 
-<h2>Operating Systems Used</h2>
-<ul>
-  <li>Windows Server 2019/2022</li>
-  <li>Windows 10</li>
-</ul>
+## Operating Systems Used
+- Windows 10 (21H2)
 
-<h2>High-Level Steps</h2>
-<ol>
-  <li>Installed Remote Access and Routing roles.</li>
-  <li>Configured VPN protocol (PPTP/L2TP).</li>
-  <li>Allowed VPN ports through NSG/firewall.</li>
-  <li>Connected client via built-in Windows VPN client.</li>
-</ol>
+## High-Level Steps
+1. Created a new Resource Group in Azure.
+2. Deployed a Windows 10 VM in a different country or region.
+3. Logged into the VM via Remote Desktop.
+4. Verified public IP address using WhatIsMyIPAddress.com.
 
-<h2>Actions and Observations</h2>
+## Actions and Observations
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Creating Azure VM"/>
+</p>
+<p>
+Deployed the Windows 10 VM in a foreign region to simulate remote access and network routing differences.
+</p>
+<br />
 
-<p><img src="https://i.imgur.com/DJmEXEB.png" width="80%" alt="VPN Role Installation"/></p>
-<p>VPN role installed and configured for inbound connections.</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Checking Public IP"/>
+</p>
+<p>
+Confirmed that the VM’s IP address reflected its geographic location by using WhatIsMyIPAddress.com.
+</p>
+<br />
 
-<p><img src="https://i.imgur.com/DJmEXEB.png" width="80%" alt="VPN User Access"/></p>
-<p>Configured user access permissions for VPN authentication.</p>
-
-<p><img src="https://i.imgur.com/DJmEXEB.png" width="80%" alt="Client Connection Test"/></p>
-<p>Client successfully connected to VPN and accessed internal resources.</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Connecting via RDP"/>
+</p>
+<p>
+Accessed the VM remotely using RDP and confirmed smooth connection and location-based routing.
+</p>
+<br />
