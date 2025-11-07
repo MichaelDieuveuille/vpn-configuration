@@ -19,25 +19,28 @@ In this lab, a Windows 10 Virtual Machine was deployed in a geographically dista
 
 ## Actions and Observations
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Creating Azure VM"/>
+<img width="2559" height="1234" alt="Screenshot 2025-11-07 184928" src="https://github.com/user-attachments/assets/d4d3797a-0d70-45be-b6df-8f2b56a8e09a" />
+
 </p>
 <p>
-Deployed the Windows 10 VM in a foreign region to simulate remote access and network routing differences.
+Checked VM's IP address and its geographic location using WhatIsMyIPAddress.com. 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Checking Public IP"/>
+<img width="2559" height="1103" alt="Screenshot 2025-11-07 185005" src="https://github.com/user-attachments/assets/f2d374e2-96e3-4dd4-a9b1-9002e8a65c0a" />
+
+</p>
+<p>
+Changing the IP address of the VM using ProtonVPN and setting up a VPN in order to change the geographic location.
+</p>
+<br />
+
+<p>
+<img width="2559" height="1259" alt="Screenshot 2025-11-07 185022" src="https://github.com/user-attachments/assets/eecd4123-d2cf-492b-a267-c6da2d5c24da" />
+
 </p>
 <p>
 Confirmed that the VM’s IP address reflected its geographic location by using WhatIsMyIPAddress.com.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Connecting via RDP"/>
-</p>
-<p>
-Accessed the VM remotely using RDP and confirmed smooth connection and location-based routing.
 </p>
 <br />
