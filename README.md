@@ -28,7 +28,7 @@ Web browser (for IP verification)
 
 </p>
 <p>
-Checked VM's IP address and its geographic location using WhatIsMyIPAddress.com. 
+The VPN configuration process began by establishing the foundational infrastructure within Microsoft Azure. A new Resource Group was created to logically contain all associated resources, ensuring the environment remained organized and easily manageable. Once the group was established, a Windows 10 Virtual Machine was deployed within it. To simulate global connectivity, the VM was intentionally placed in a data center region that differed geographically from the user's own location — for example, deploying in <strong>West Europe</strong> while working from the United States. This regional distinction would later make the change in network routing through the VPN more visible.
 </p>
 <br />
 
@@ -37,8 +37,7 @@ Checked VM's IP address and its geographic location using WhatIsMyIPAddress.com.
 
 </p>
 <p>
-Changing the IP address of the VM using ProtonVPN and setting up a VPN in order to change the geographic location.
-</p>
+After deployment, the VM was accessed using the Remote Desktop Protocol (RDP). Logging in through RDP provided a full Windows 10 environment  hosted in Azure’s cloud infrastructure. Before introducing the VPN, the VM’s baseline network configuration was tested. Using a web browser, the site <code>whatismyipaddress.com</code> was accessed to identify the VM’s current public IP address and its associated geographic location. This served as the “before” snapshot — the IP typically corresponded to the Azure data center region (e.g., Amsterdam or Dublin) where the VM resided.
 <br />
 
 <p>
@@ -46,6 +45,13 @@ Changing the IP address of the VM using ProtonVPN and setting up a VPN in order 
 
 </p>
 <p>
-Confirmed that the VM’s IP address reflected its geographic location by using WhatIsMyIPAddress.com.
+The next phase focused on implementing the VPN. A VPN client such as ProtonVPN was downloaded and installed directly onto the virtual machine.  Once installed, the VPN client was configured and connected to a server located in a completely different region, such as Japan or Canada. This connection rerouted all outgoing traffic through an encrypted VPN tunnel, effectively masking the VM’s original Azure-assigned IP address. During this stage, the VPN client’s interface confirmed a successful connection and displayed the newly assigned VPN server’s location.
 </p>
 <br />
+
+ <p>
+  To verify that the VPN was functioning correctly, the same IP verification process was repeated. Opening <code>whatismyipaddress.com</code> again revealed a completely different public IP address, now corresponding to the VPN’s geographic region instead of Azure’s data center. This clearly demonstrated that the virtual machine’s traffic was being securely tunneled through the VPN. Screenshots taken before and after this test provided visual evidence of the IP and location change, validating that the VPN successfully altered the network routing path.
+    </p>
+
+ <p>
+The experiment concluded with documentation and analysis. Observations confirmed that Azure VMs can effectively emulate real-world network configurations and VPN use cases. The combination of Azure infrastructure and VPN technology illustrated a fundamental networking concept — encrypting and rerouting traffic to ensure privacy and security across geographically distributed systems. This setup not only provided a demonstration of VPN behavior in a controlled cloud environment but also offered a practical understanding of how organizations can use similar setups to protect data, anonymize connections, and simulate remote user behavior.
