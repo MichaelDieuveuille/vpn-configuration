@@ -28,7 +28,7 @@ Web browser (for IP verification)
 ## Actions and Observations
 
 <p>
-<b style="font-size: 20px;">Step 1: Created a new Resource Group in Azure.</b>
+<b style="font-size: 40px;">Step 1: Created a new Resource Group in Azure.</b>
 </p>
 <img width="2502" height="1301" alt="Screenshot 2025-11-11 195920" src="https://github.com/user-attachments/assets/a73d59d4-9146-4c95-942e-d9524dbd538e" />
 
@@ -38,7 +38,7 @@ The VPN configuration process began by establishing the foundational infrastruct
 <br />
 
 <p>
-<b style="font-size: 20px;">Step 2: Deployed a Windows 10 VM in a different country or region.</b>
+<b style="font-size: 40px;">Step 2: Deployed a Windows 10 VM in a different country or region.</b>
 </p>
 <img width="2504" height="1302" alt="Screenshot 2025-11-11 200043" src="https://github.com/user-attachments/assets/b743f9c4-4469-45e9-b32a-8d2ad73f4cad" />
 
@@ -47,7 +47,7 @@ Once the group was established, a Windows 10 Virtual Machine was deployed within
 </p>
 
 <p>
-<b style="font-size: 20px;">Step 3: Connect to the Virtual Machine using Remote Desktop.</b>
+<b style="font-size: 40px;">Step 3: Connect to the Virtual Machine using Remote Desktop.</b>
 </p>
 <img width="2510" height="1299" alt="Screenshot 2025-11-11 200425" src="https://github.com/user-attachments/assets/dd14f54b-78a5-458e-a672-7137b3fae3a9" />
 
@@ -56,7 +56,7 @@ After deployment, the Virtual Machine was accessed remotely using Remote Desktop
 </p>
 
 <p>
-<b style="font-size: 20px;">Step 4: Verify the Virtual Machine’s public IP and geographic location.</b>
+<b style="font-size: 40px;">Step 4: Verify the Virtual Machine’s public IP and geographic location.</b>
 </p>
 <img width="2559" height="1247" alt="Screenshot 2025-11-11 205215" src="https://github.com/user-attachments/assets/e4c219d8-63e7-4e1f-aa8c-e502e2c41d29" />
 
@@ -66,7 +66,7 @@ Before introducing the VPN, the VM’s baseline network configuration was tested
 <br /> 
 
 <p>
-<b style="font-size: 20px;">Step 5: Install and configure a VPN client on the Virtual Machine.</b>
+<b style="font-size: 40px;">Step 5: Install and configure a VPN client on the Virtual Machine.</b>
 </p>
 <img width="2559" height="1259" alt="Screenshot 2025-11-11 205332" src="https://github.com/user-attachments/assets/f9509b77-c318-4ebe-a08c-2f9b5df1f548" />
 
@@ -75,7 +75,7 @@ The next phase focused on implementing the VPN. A VPN client such as ProtonVPN w
 </p>
 
 <p>
-<b style="font-size: 20px;">Step 6: Re-verify the IP and location after VPN connection.</b>
+<b style="font-size: 40px;">Step 6: Re-verify the IP and location after VPN connection.</b>
 </p>
 <img width="2559" height="1277" alt="Screenshot 2025-11-11 205402" src="https://github.com/user-attachments/assets/a2889b83-0977-4c2d-b572-09daf08d6d30" />
 
@@ -84,7 +84,7 @@ To verify that the VPN was functioning correctly, the same IP verification proce
 </p>
 
 <p>
-<b style="font-size: 20px;">Step 7: Analyze and document results.</b>
+<b style="font-size: 40px;">Step 7: Analyze and document results.</b>
 </p>
 <img width="2559" height="1266" alt="Screenshot 2025-11-11 205415" src="https://github.com/user-attachments/assets/9016fbde-04f9-44ae-85cf-8f400c5fd092" />
 
