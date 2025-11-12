@@ -31,7 +31,7 @@ Web browser (for IP verification)
 
 </p>
 <p>
-The VPN configuration process began by establishing the foundational infrastructure within Microsoft Azure. A new Resource Group was created to logically contain all associated resources, ensuring the environment remained organized and easily manageable. Once the group was established, a Windows 10 Virtual Machine was deployed within it. To simulate global connectivity, the VM was intentionally placed in a data center region that differed geographically from the user's own location — for example, deploying in <strong>West Europe</strong> while working from the United States. This regional distinction would later make the change in network routing through the VPN more visible.
+The VPN configuration process began by establishing the foundational infrastructure within Microsoft Azure. A new Resource Group was created to logically contain all associated resources, ensuring the environment remained organized and easily manageable. Once the group was established, a Windows 10 Virtual Machine was deployed within it. To simulate global connectivity, the VM was intentionally placed in a data center region that differed geographically from the user's own location — for example, deploying in <strong>East US 2</strong> while working from the United States. This regional distinction would later make the change in network routing through the VPN more visible.
 </p>
 <br />
 
