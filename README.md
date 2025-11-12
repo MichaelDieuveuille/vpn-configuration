@@ -49,7 +49,7 @@ Once the group was established, a Windows 10 Virtual Machine was deployed within
 
 </p>
 <p>
-After deployment, the VM was accessed using the Remote Desktop Protocol (RDP). Logging in through RDP provided a full Windows 10 environment  hosted in Azure’s cloud infrastructure. 
+After deployment, the Virtual Machine was accessed remotely using Remote Desktop Protocol (RDP), which allows a secure graphical connection between the user’s local computer and the Azure-hosted VM. By copying the VM’s public IP address from the Azure portal and entering it into the Remote Desktop Connection app, the user authenticated with the credentials set during creation. This established an encrypted session over port 3389, displaying the full Windows 10 desktop environment running in Azure’s cloud infrastructure. Through this connection, the user could interact with the VM as if it were a local computer—installing software, managing files, and preparing the system for VPN configuration and testing.
 
  <p>
  <img width="2559" height="1247" alt="Screenshot 2025-11-11 205215" src="https://github.com/user-attachments/assets/e4c219d8-63e7-4e1f-aa8c-e502e2c41d29" />
@@ -57,7 +57,7 @@ After deployment, the VM was accessed using the Remote Desktop Protocol (RDP). L
   </p>
 <p>
    
-Before introducing the VPN, the VM’s baseline network configuration was tested. Using a web browser, the site <code>whatismyipaddress.com</code> was accessed to identify the VM’s current public IP address and its associated geographic location. This served as the “before” snapshot — the IP typically corresponded to the Azure data center region (e.g., Amsterdam or Dublin) where the VM resided. 
+Before introducing the VPN, the VM’s baseline network configuration was tested. Using a web browser, the site <code>whatismyipaddress.com</code> was accessed to identify the VM’s current public IP address and its associated geographic location. This served as the “before” snapshot — the IP typically corresponded to the Azure data center region (e.g., US East 2, Virginia) where the VM resided. 
 
 </p>
 <br /> 
