@@ -4,18 +4,23 @@
 In this lab, a Windows 10 Virtual Machine was deployed in a geographically distant Azure region to simulate a remote environment for VPN testing and global connectivity verification.
 
 ## Environments and Technologies Used
-- Microsoft Azure (Virtual Machines, Resource Groups)
-- Remote Desktop (RDP)
-- WhatIsMyIPAddress.com
+Microsoft Azure (Portal)
+Windows 10 Virtual Machine
+Remote Desktop Connection (RDP)
+ProtonVPN (or other VPN client)
+Web browser (for IP verification)
 
 ## Operating Systems Used
-- Windows 10 (21H2)
+- Windows 10 (Client)
 
 ## High-Level Steps
 1. Created a new Resource Group in Azure.
 2. Deployed a Windows 10 VM in a different country or region.
-3. Logged into the VM via Remote Desktop.
-4. Verified public IP address using WhatIsMyIPAddress.com.
+3. Connect to the Virtual Machine using Remote Desktop.
+4. Verify the Virtual Machine’s public IP and geographic location.
+5. Install and configure a VPN client on the Virtual Machine.
+6. Re-verify the IP and location after VPN connection.
+7. Analyze and document results.
 
 ## Actions and Observations
 <p>
