@@ -1,5 +1,5 @@
 
-   <img src="https://github.com/user-attachments/assets/9c326204-d498-43be-83f6-64432181a312" alt="proton-vpn" width="800">
+   <img src="https://github.com/user-attachments/assets/9c326204-d498-43be-83f6-64432181a312" alt="proton-vpn" width="600">
 
 # Azure Virtual Machine VPN Setup
 
