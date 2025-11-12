@@ -31,7 +31,7 @@ Web browser (for IP verification)
 
 </p>
 <p>
-The VPN configuration process began by establishing the foundational infrastructure within Microsoft Azure. A new Resource Group was created to logically contain all associated resources, ensuring the environment remained organized and easily manageable. Once the group was established, a Windows 10 Virtual Machine was deployed within it. To simulate global connectivity, the VM was intentionally placed in a data center region that differed geographically from the user's own location — for example, deploying in <strong>East US 2</strong> while working from the United States. This regional distinction would later make the change in network routing through the VPN more visible.
+The VPN configuration process began by establishing the foundational infrastructure within Microsoft Azure. A new Resource Group was created to logically contain all associated resources, ensuring the environment remained organized and easily manageable. We are creating this resource group in order to insert a windows virtual machine that will help test our VPN configuration.
 </p>
 <br />
 
@@ -41,8 +41,7 @@ The VPN configuration process began by establishing the foundational infrastruct
 
 </p>
 <p>
-After deployment, the VM was accessed using the Remote Desktop Protocol (RDP). Logging in through RDP provided a full Windows 10 environment  hosted in Azure’s cloud infrastructure. Before introducing the VPN, the VM’s baseline network configuration was tested. Using a web browser, the site <code>whatismyipaddress.com</code> was accessed to identify the VM’s current public IP address and its associated geographic location. This served as the “before” snapshot — the IP typically corresponded to the Azure data center region (e.g., Amsterdam or Dublin) where the VM resided.
-<br />
+Once the group was established, a Windows 10 Virtual Machine was deployed within it. To simulate global connectivity, the VM was intentionally placed in a data center region that differed geographically from the user's own location — for example, deploying in <strong>East US 2</strong> while working from the United States. This regional distinction would later make the change in network routing through the VPN more visible. As you can see, the operating system that I used is Windows 10 since it provides free services to Microsoft Azure. 
 
 <p>
 <img width="2510" height="1299" alt="Screenshot 2025-11-11 200425" src="https://github.com/user-attachments/assets/dd14f54b-78a5-458e-a672-7137b3fae3a9" />
@@ -50,6 +49,9 @@ After deployment, the VM was accessed using the Remote Desktop Protocol (RDP). L
 
 </p>
 <p>
+After deployment, the VM was accessed using the Remote Desktop Protocol (RDP). Logging in through RDP provided a full Windows 10 environment  hosted in Azure’s cloud infrastructure. Before introducing the VPN, the VM’s baseline network configuration was tested. Using a web browser, the site <code>whatismyipaddress.com</code> was accessed to identify the VM’s current public IP address and its associated geographic location. This served as the “before” snapshot — the IP typically corresponded to the Azure data center region (e.g., Amsterdam or Dublin) where the VM resided.
+<br /> 
+
 The next phase focused on implementing the VPN. A VPN client such as ProtonVPN was downloaded and installed directly onto the virtual machine.  Once installed, the VPN client was configured and connected to a server located in a completely different region, such as Japan or Canada. This connection rerouted all outgoing traffic through an encrypted VPN tunnel, effectively masking the VM’s original Azure-assigned IP address. During this stage, the VPN client’s interface confirmed a successful connection and displayed the newly assigned VPN server’s location.
 </p>
 <br />
