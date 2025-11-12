@@ -27,7 +27,7 @@ Web browser (for IP verification)
 
 ## Actions and Observations
 <p>
-<img width="2559" height="1234" alt="Screenshot 2025-11-07 184928" src="https://github.com/user-attachments/assets/d4d3797a-0d70-45be-b6df-8f2b56a8e09a" />
+<img width="2502" height="1301" alt="Screenshot 2025-11-11 195920" src="https://github.com/user-attachments/assets/a73d59d4-9146-4c95-942e-d9524dbd538e" />
 
 </p>
 <p>
@@ -36,7 +36,8 @@ The VPN configuration process began by establishing the foundational infrastruct
 <br />
 
 <p>
-<img width="2559" height="1103" alt="Screenshot 2025-11-07 185005" src="https://github.com/user-attachments/assets/f2d374e2-96e3-4dd4-a9b1-9002e8a65c0a" />
+<img width="2504" height="1302" alt="Screenshot 2025-11-11 200043" src="https://github.com/user-attachments/assets/b743f9c4-4469-45e9-b32a-8d2ad73f4cad" />
+
 
 </p>
 <p>
@@ -44,7 +45,8 @@ After deployment, the VM was accessed using the Remote Desktop Protocol (RDP). L
 <br />
 
 <p>
-<img width="2559" height="1259" alt="Screenshot 2025-11-07 185022" src="https://github.com/user-attachments/assets/eecd4123-d2cf-492b-a267-c6da2d5c24da" />
+<img width="2510" height="1299" alt="Screenshot 2025-11-11 200425" src="https://github.com/user-attachments/assets/dd14f54b-78a5-458e-a672-7137b3fae3a9" />
+
 
 </p>
 <p>
@@ -53,8 +55,13 @@ The next phase focused on implementing the VPN. A VPN client such as ProtonVPN w
 <br />
 
  <p>
+ <img width="2559" height="1247" alt="Screenshot 2025-11-11 205215" src="https://github.com/user-attachments/assets/e4c219d8-63e7-4e1f-aa8c-e502e2c41d29" />
+
+  </p>
+<p>
   To verify that the VPN was functioning correctly, the same IP verification process was repeated. Opening <code>whatismyipaddress.com</code> again revealed a completely different public IP address, now corresponding to the VPN’s geographic region instead of Azure’s data center. This clearly demonstrated that the virtual machine’s traffic was being securely tunneled through the VPN. Screenshots taken before and after this test provided visual evidence of the IP and location change, validating that the VPN successfully altered the network routing path.
     </p>
+<img width="2559" height="1261" alt="Screenshot 2025-11-11 205310" src="https://github.com/user-attachments/assets/440d4556-e95b-475f-9ddc-fad047ac4dc1" />
 
  <p>
 The experiment concluded with documentation and analysis. Observations confirmed that Azure VMs can effectively emulate real-world network configurations and VPN use cases. The combination of Azure infrastructure and VPN technology illustrated a fundamental networking concept — encrypting and rerouting traffic to ensure privacy and security across geographically distributed systems. This setup not only provided a demonstration of VPN behavior in a controlled cloud environment but also offered a practical understanding of how organizations can use similar setups to protect data, anonymize connections, and simulate remote user behavior.
