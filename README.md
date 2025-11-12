@@ -27,7 +27,7 @@ Web browser (for IP verification)
 
 ## Actions and Observations
 <p>
-Step 1: Created a new Resource Group in Azure.
+## Step 1: Created a new Resource Group in Azure.
 <img width="2502" height="1301" alt="Screenshot 2025-11-11 195920" src="https://github.com/user-attachments/assets/a73d59d4-9146-4c95-942e-d9524dbd538e" />
 
 </p>
