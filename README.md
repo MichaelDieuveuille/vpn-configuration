@@ -7,11 +7,11 @@
 In this lab, a Windows 10 Virtual Machine was deployed in a geographically distant Azure region to simulate a remote environment for VPN testing and global connectivity verification.
 
 ## Environments and Technologies Used
-Microsoft Azure (Portal)
-Windows 10 Virtual Machine
-Remote Desktop Connection (RDP)
-ProtonVPN (or other VPN client)
-Web browser (for IP verification)
+- Microsoft Azure (Portal)
+- Windows 10 Virtual Machine
+- Remote Desktop Connection (RDP)
+- ProtonVPN (or other VPN client)
+- Web browser (for IP verification)
 
 ## Operating Systems Used
 - Windows 10 (Client)
