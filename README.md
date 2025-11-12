@@ -1,3 +1,6 @@
+
+![proton-vpn_g9ys](https://github.com/user-attachments/assets/9c326204-d498-43be-83f6-64432181a312)
+
 # Azure Virtual Machine VPN Setup
 
 ## Overview
