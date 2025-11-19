@@ -81,8 +81,8 @@ On your personal computer, sign up for the free version of Proton VPN at https:/
 <img width="2559" height="1277" alt="Screenshot 2025-11-11 205402" src="https://github.com/user-attachments/assets/a2889b83-0977-4c2d-b572-09daf08d6d30" />
 
 <p>
-To verify that the VPN was functioning correctly, the same IP verification process was repeated. Opening <code>whatismyipaddress.com</code> again revealed a completely different public IP address, now corresponding to the VPN’s geographic region instead of Azure’s data center. This clearly demonstrated that the virtual machine’s traffic was being securely tunneled through the VPN. Screenshots taken before and after this test provided visual evidence of the IP and location change, validating that the VPN successfully altered the network routing path.
-</p>
+ Revisit https://whatismyipaddress.com/ and observe the changes in the IP information. Note how the IP now reflects the VPN server you connected to, demonstrating the VPN's effect.
+
 
 <p>
 <b style="font-size: 40px;">Step 7: Analyze and document results.</b>
@@ -90,5 +90,5 @@ To verify that the VPN was functioning correctly, the same IP verification proce
 <img width="2559" height="1266" alt="Screenshot 2025-11-11 205415" src="https://github.com/user-attachments/assets/9016fbde-04f9-44ae-85cf-8f400c5fd092" />
 
 <p>
-Proving that the VPN configuration was a success, I searched Amazon and the delivery was set to the Netherlands. Observations confirmed that Azure VMs can effectively emulate real-world network configurations and VPN use cases. The combination of Azure infrastructure and VPN technology illustrated a fundamental networking concept — encrypting and rerouting traffic to ensure privacy and security across geographically distributed systems. This setup not only provided a demonstration of VPN behavior in a controlled cloud environment but also offered a practical understanding of how organizations can use similar setups to protect data, anonymize connections, and simulate remote user behavior.
+Proving that the VPN configuration was a success, I searched Amazon and the delivery was set to the Netherlands. Observations confirmed that Azure VMs can effectively emulate real-world network configurations and VPN use cases. This setup not only provided a demonstration of VPN behavior in a controlled cloud environment but also offered a practical understanding of how organizations can use similar setups to protect data, anonymize connections, and simulate remote user behavior.
 </p>
