@@ -33,7 +33,8 @@ In this lab, a Windows 10 Virtual Machine was deployed in a geographically dista
 <img width="2502" height="1301" alt="Screenshot 2025-11-11 195920" src="https://github.com/user-attachments/assets/a73d59d4-9146-4c95-942e-d9524dbd538e" />
 
 <p>
-The VPN configuration process began by establishing the foundational infrastructure within Microsoft Azure. A new Resource Group was created called "vpn-test-win-10" to logically contain all associated resources, ensuring the environment remained organized and easily manageable. We are creating this resource group in order to insert a windows virtual machine that will help test our VPN configuration. 
+Create a Resource Group in Azure, then deploy a Windows 10 Virtual Machine within it. Once the VM is set up, use Remote Desktop Protocol (RDP) to log into the VM.
+ 
 </p>
 <br />
 
